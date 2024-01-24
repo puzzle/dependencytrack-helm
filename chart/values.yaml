@@ -168,7 +168,7 @@ ingress:
   host: chart-example.local
   # ingressClassName: nginx
 
-# -- configuration of postgres
+# -- configuration of bitnami postgres chart
 postgresql:
   enabled: true
   auth:
