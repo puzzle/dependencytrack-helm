@@ -30,7 +30,7 @@ entries:
     version: 2.13.3
   dependency-track:
   - apiVersion: v2
-    appVersion: 4.10.1
+    appVersion: 4.12.1
     created: "2024-01-24T11:36:44.7076132+01:00"
     dependencies:
     - condition: postgresql.enabled
@@ -64,8 +64,8 @@ entries:
     - https://github.com/puzzle/dependencytrack-helm
     - https://www.puzzle.ch/de/security
     urls:
-    - https://puzzle.github.io/dependencytrack-helm/dependency-track-1.7.0.tgz
-    version: 1.7.0
+    - https://puzzle.github.io/dependencytrack-helm/dependency-track-1.8.1.tgz
+    version: 1.8.1
   postgresql:
   - annotations:
       category: Database
