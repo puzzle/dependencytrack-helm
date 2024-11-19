@@ -22,8 +22,8 @@ Dependency-Track is an intelligent Software Supply Chain Component Analysis plat
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | common | 2.x.x   |
-| https://charts.bitnami.com/bitnami | postgresql | 13.5.38 |
+| https://charts.bitnami.com/bitnami | common | 2.x.x |
+| https://charts.bitnami.com/bitnami | postgresql | 15.5.38 |
 
 ## Values
 
