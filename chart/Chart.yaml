@@ -21,7 +21,7 @@ sources:
  - https://www.puzzle.ch/de/security
 dependencies:
 - name: postgresql
-  version: 13.1.5
+  version: 15.5.38
   repository: https://charts.bitnami.com/bitnami
   condition: postgresql.enabled
 - name: common
