@@ -5,7 +5,7 @@ metadata:
   labels: {{- include "backend.labels.standard" . | nindent 4 }}
     prometheus: pitc
     metrics-monitoring: "true"
-  name: metrics-monitoring
+  name: {{ include "common.names.fullname" . }}-servicemonitor
   namespace: {{ .Release.Namespace }}
 spec:
   endpoints:
