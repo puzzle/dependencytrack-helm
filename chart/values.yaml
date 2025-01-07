@@ -152,6 +152,10 @@ apiserver:
     timeoutSeconds: 2
     successThreshold: 1
     failureThreshold: 3
+  serviceMonitor:
+    # -- Specifies whether a service monitor should be created.
+    # Exposure of Prometheus metrics need to be enabled separately, see https://docs.dependencytrack.org/getting-started/configuration/#api-server
+    create: false
 
 # -- configuration of ingress
 ingress:
