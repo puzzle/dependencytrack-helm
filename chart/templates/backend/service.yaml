@@ -9,6 +9,8 @@ metadata:
 spec:
   type: {{ .Values.apiserver.service.type }}
   ports:
-  - port: {{ .Values.apiserver.service.port }}
+  - name: api
+    port: {{ .Values.apiserver.service.port }}
+    protocol: TCP
     targetPort: api
   selector: {{- include "backend.labels.matchLabels" . | nindent 4 }}
