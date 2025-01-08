@@ -13,6 +13,8 @@ spec:
     targetPort: api
   {{- if ((.Values.apiserver).serviceMonitor).create }}
   - port: 8080
-    targetPort: metrics
+    targetPort: api
+    protocol: TCP
+    name: metrics
   {{- end }}
   selector: {{- include "backend.labels.matchLabels" . | nindent 4 }}
