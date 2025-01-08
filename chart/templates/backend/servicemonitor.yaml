@@ -1,0 +1,23 @@
+{{- if ((.Values.apiserver).serviceMonitor).create -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels: {{- include "backend.labels.standard" . | nindent 4 }}
+    metrics-monitoring: "true"
+  name: {{ include "common.names.fullname" . }}-servicemonitor
+  namespace: {{ .Release.Namespace }}
+spec:
+  endpoints:
+    - interval: 30s
+      port: metrics
+      scheme: http
+      path: /metrics
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: {{ .Release.Name }}
+      app.kubernetes.io/name: deptrack
+      app.kubernetes.io/component: backend
+{{- end -}}
