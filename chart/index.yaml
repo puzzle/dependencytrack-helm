@@ -30,7 +30,7 @@ entries:
     version: 2.27.0
   dependency-track:
   - apiVersion: v2
-    appVersion: 4.12.2
+    appVersion: 4.12.7
     created: "2024-01-24T11:36:44.7076132+01:00"
     dependencies:
     - condition: postgresql.enabled
