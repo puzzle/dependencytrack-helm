@@ -30,6 +30,43 @@ entries:
     version: 2.13.3
   dependency-track:
   - apiVersion: v2
+    appVersion: 4.13.0
+    created: "2025-04-17T09:25:01.99130173Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.x.x
+    description: 'Dependency-Track is an intelligent Software Supply Chain Component
+      Analysis platform that allows organizations to identify and reduce risk from
+      the use of third-party and open source components. Dependency-Track takes a
+      unique and highly beneficial approach by leveraging the capabilities of Software
+      Bill-of-Materials (SBOM). This approach provides capabilities that traditional
+      Software Composition Analysis (SCA) solutions cannot achieve. '
+    digest: b58b16af7d5d3bd6c452a55607543d6c4454c0d3fcde7d54af61bbec76d52260
+    home: https://dependencytrack.org/
+    icon: https://raw.githubusercontent.com/DependencyTrack/branding/master/dt-logo-black-text.svg
+    keywords:
+    - security
+    - dependency
+    - dependency-track
+    - OWASP
+    - Supply Chain Component Analysis
+    maintainers:
+    - email: cicd@puzzle.ch
+      name: Puzzle ITC
+    name: dependency-track
+    sources:
+    - https://docs.dependencytrack.org/
+    - https://github.com/puzzle/dependencytrack-helm
+    - https://www.puzzle.ch/de/security
+    urls:
+    - https://github.com/puzzle/dependencytrack-helm/releases/download/dependency-track-1.8.8/dependency-track-1.8.8.tgz
+    version: 1.8.8
+  - apiVersion: v2
     appVersion: 4.12.7
     created: "2025-04-16T09:05:20.298208248Z"
     dependencies:
@@ -404,4 +441,4 @@ entries:
     urls:
     - https://puzzle.github.io/dependencytrack-helm/charts/postgresql-13.1.5.tgz
     version: 13.1.5
-generated: "2025-04-16T09:05:20.298232573Z"
+generated: "2025-04-17T09:25:01.991350902Z"
